@@ -7,17 +7,20 @@
 int main(void)
 
 {
-	int n;
+int num = '0'; /*Initialize num to 0*/
+char letter = 'a'; /*Initialize letter to a*/
 
-	for (n = 0; n < 100; n++)
-	{
-		putchar(n + '0');
-		if (n < 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
+while (num <= '9') /*Print 0-9*/
+{
+putchar(num);
+num++;
+}
+while (letter <= 'f') /*Print a-f*/
+{
+putchar(letter);
+letter++;
+}
 putchar('\n');
 return (0);
+
 }
