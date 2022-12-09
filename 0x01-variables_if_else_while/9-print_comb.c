@@ -1,24 +1,21 @@
 #include <stdio.h>
-
 /**
  * main - prints all combination of single digits
  * Return: Always 0
  */
 int main(void)
 
-{
-int num = '0'; /*Initialize num to 0*/
-char letter = 'a'; /*Initialize letter to a*/
+{int num = '0';
 
-while (num <= '9') /*Print 0-9*/
+while (num <= '9')
 {
 putchar(num);
-num++;
-}
-while (letter <= 'f') /*Print a-f*/
+if (num != '9')
 {
-putchar(letter);
-letter++;
+	putchar(',');
+	putchar(' ');
+}
+num++;
 }
 putchar('\n');
 return (0);
